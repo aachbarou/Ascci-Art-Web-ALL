@@ -1,0 +1,16 @@
+.artist-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.artist {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+.artist img {
+    width: 100%;
+    height: auto;
+}

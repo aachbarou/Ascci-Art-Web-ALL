@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>artists</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo">LOGO</h1>
+        <section class="Pages">
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+            <a href="#">Home</a>
+        </section>
+    </header>
+    <body>
+        <section id="artists">
+            {{range .}}
+                <h2>Artists</h2>
+                <div class="artist-card">
+                    <img src="{{.Image}}" alt="Name">
+                    <div class="info">
+                    <h3>{{.Name}}</h3>
+                    <label for="YearOfBegin">Started in : {{.YearOfBegin}}</label>
+                    <p>First Album: {{.FirstAlbum}}</p>
+                    <h2>Members</h2>
+                        {{range .Members}}
+                        <ul>
+                            <li>{{.}}</li>
+                        </ul>
+                        {{end}}
+                </div>
+                </div>
+            {{end}}
+        </section>
+    
+        <section id="locations">
+            <h2>Locations</h2>
+            <ul>
+                <li>City 1</li>
+                </ul>
+        </section>
+    
+        <section id="dates">
+            <h2>Dates</h2>
+            <ul>
+                <li>Date 1</li>
+                </ul>
+        </section>
+    
+        <section id="relation">
+            <h2>Relation</h2>
+            </section>
+    </body>
+</body>
+</html>
